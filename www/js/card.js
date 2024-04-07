@@ -25,7 +25,7 @@ const createGridSplit = () => {
 const createGridCont = (data) => {
   let div = 
 `
-<div class="flex border border-white-700">
+<div class="flex border p-2 mx-1 my-1 border-white-700 shadow-2xl drop-shadow-2xl bg-white rounded-lg">
 `.concat(createTestImage(data))
   return div.concat("</div>")
 }
@@ -72,7 +72,7 @@ const createPopUp = (name, content) => {
   ul = ul.concat(`</ul>`)
   
   let code = `
-<div id="alert-additional-content-5" style="translate: 5vw 20vh;" class="p-4 mx-auto my-auto z-40 rounded-full fixed border border-gray-300 rounded-lg bg-gray-50 dark:border-gray-600 dark:bg-gray-800" role="alert">
+<div id="alert-additional-content-5" style="translate: 5vw 20vh; width: 90%" class="shadow-2xl drop-shadow-2xl p-4 mx-auto my-auto z-40 rounded-full fixed border border-gray-300 rounded-lg bg-gray-50 dark:border-gray-600 dark:bg-gray-800" role="alert">
   <div class="flex items-center">
     <svg class="flex-shrink-0 w-4 h-4 me-2 dark:text-gray-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
       <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z"/>
